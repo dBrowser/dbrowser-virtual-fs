@@ -89,7 +89,7 @@ class FSArchive extends FSArchiveContainer {
     } else {
       await DatArchive.exportToArchive({
         src: this._archive.url,
-        dst: `dat://${targetArchiveKey}${newPath}`,
+        dst: `dwebx://${targetArchiveKey}${newPath}`,
         skipUndownloadedFiles: true
       })
     }
@@ -132,7 +132,7 @@ class FSArchiveFolder extends FSArchiveContainer {
     } else {
       await DatArchive.exportToArchive({
         src: this._archive.url + this._path,
-        dst: `dat://${targetArchiveKey}${newPath}`,
+        dst: `dwebx://${targetArchiveKey}${newPath}`,
         skipUndownloadedFiles: true
       })
     }
@@ -144,7 +144,7 @@ class FSArchiveFolder extends FSArchiveContainer {
     } else {
       await DatArchive.exportToArchive({
         src: this._archive.url + this._path,
-        dst: `dat://${targetArchiveKey}${newPath}`,
+        dst: `dwebx://${targetArchiveKey}${newPath}`,
         skipUndownloadedFiles: true
       })
       await this._archive.rmdir(this._path, {recursive: true})
@@ -222,7 +222,7 @@ class FSArchiveFile extends FSNode {
     } else {
       await DatArchive.exportToArchive({
         src: this._archive.url + this._path,
-        dst: `dat://${targetArchiveKey}${newPath}`,
+        dst: `dwebx://${targetArchiveKey}${newPath}`,
         skipUndownloadedFiles: true
       })
     }
@@ -234,7 +234,7 @@ class FSArchiveFile extends FSNode {
     } else {
       await DatArchive.exportToArchive({
         src: this._archive.url + this._path,
-        dst: `dat://${targetArchiveKey}${newPath}`,
+        dst: `dwebx://${targetArchiveKey}${newPath}`,
         skipUndownloadedFiles: true
       })
       await this._archive.unlink(this._path)

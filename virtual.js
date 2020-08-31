@@ -1,4 +1,4 @@
-/* globals beaker */
+/* globals dbrowserx */
 
 const {FSNode, FSContainer} = require('./base')
 const {diffUpdate, sortCompare} = require('./util')

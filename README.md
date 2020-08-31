@@ -1,4 +1,4 @@
-# beaker-virtual-fs
+# dbrowser-virtual-fs
 
 This module wraps a number of different APIs in generic "file" objects. The generic objects can be used to simplify rendering.
 
@@ -50,5 +50,5 @@ const {
   FSArchiveFile, // a file within an archive
   FSArchiveFolder_BeingCreated, // a temporary virtual folder that's in the process of having a name chosen
   FSArchiveFile_BeingCreated // a temporary virtual file that's in the process of having a name chosen
-} = require('beaker-virtual-fs')
+} = require('dbrowser-virtual-fs')
 ```
